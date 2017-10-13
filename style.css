@@ -2,27 +2,49 @@ body {
     margin: 0;
 }
 header {
+    min-height: 38px;
     max-height: 100px;
-    height: 6vh;
+    height: 9vh;
     border: 1px solid black;
     max-width: 100%;
     margin: 0;
     padding: 0;
 }
 header svg {
+    min-height: 38px;
     max-height: 100px;
-    height: 6vh;
-    width: 10%;
-    border: 1px solid black;
+    height: 9vh;
+    width: 15%;
     margin: 0;
     padding: 0;
     font-family: "Mr Dafoe", cursive;
     font-size: 52;
 }
-/*.hamburger {
-    height: 100px;
-    width: 50px;
-    border: 1px solid black;
+h1 {
+    font-family: "Playfair Display", serif;
+    color: #535A73;
+}
+h2, h3, h4, h5, h6{
+    font-family: "Playfair Display", serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+p {
+    font-family: "Fauna One", serif;
+}
+ul {
+    font-weight: bold;
+    list-style-type: none;
+}
+section {
+    padding: 2%;
+}
+section h1{
     margin: 0;
-    padding: 0;
-}*/
+}
+section:nth-child(odd) {
+    background: #e0e0e0;
+}
+section:nth-child(even) {
+    background: #607d8b;
+}

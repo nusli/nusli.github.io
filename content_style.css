@@ -1,0 +1,43 @@
+header #hamburger{
+    float: right;
+    cursor: pointer;
+    position: fixed;
+    right: 2%;
+}
+
+#hero {
+    background-image: url("images/office.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#hero h1 {
+    color: #253445;
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+}
+
+nav {
+    position: fixed;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.about_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "image image"
+        "text text";
+}
+.about_image {
+    grid-area: image;
+    border-radius: 50%;
+    width: 50%;
+    justify-self: center;
+}
+.about_text {
+    grid-area: text;
+}
