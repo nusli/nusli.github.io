@@ -38,6 +38,8 @@ nav {
     width: 50%;
     justify-self: center;
 }
+
 .about_text {
     grid-area: text;
 }
+
