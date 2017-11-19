@@ -68,20 +68,40 @@
             <h2>Portfolio</h2>
             <div class="showcase" id="teamprojects">
                 <h3>Team Projects</h3>
-                <div class="carousel">
-                    <img src="images/wildride_screen.png" alt="Screenshot of Wildride" title="Wildride" />
-                    <img src="images/meetupbot_screen.png" alt="Screenshot of MeetupBot" title="Meetupbot">
+                <div class="arrowbox arrowbox-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 100" class="arrow_left">
+                        <path d="M 50 20 l -30 30 l 30 30 l -15 -30 L 50 20" />
+                    </svg>
+                </div>
+                <div class="carousel" id="carousel1">
+                    <img src="images/wildride_screen.png" alt="Screenshot of Wildride" title="Wildride" class="teamproject_img active" id="team1"/>
+                    <img src="images/meetupbot_screen.png" alt="Screenshot of MeetupBot" title="Meetupbot" class="teamproject_img" id="team2" />
+                </div>
+                <div class="arrowbox arrowbox-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 100" class="arrow_left">
+                        <path d="M 20 20 l 30 30 l -30 30 l 15 -30 L 20 20" />
+                    </svg>
                 </div>
             </div>
+
             <div class="showcase" id="singleprojects">
                 <h3>Single Projects</h3>
-                <div class="carousel">
-                    <img src="images/wikipedia_screen.png" alt="Screenshot of Wikipedia Viewer" title="Wikipedia Viewer" />
-                    <img src="images/pomodoro_screen.png" alt="Screenshot of Pomodoro Clock" title="Pomodoro Clock" />
-                    <img src="images/tictactoe_screen.png" alt="Screenshot of Tic Tac Toe Game" title="Tic Tac Toe" />
-                    <img src="images/simon_screen.png" alt="Screenshot of Simon Game" title="Simon Game" />
-                    <img src="images/calc_screen.png" alt="Screenshot of Calculator" title="Calculator" />
-                    <img src="images/weather_screen.png" alt="Screenshot of Weather App" title="Weather App" />
+                <div class="arrowbox arrowbox-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 100" class="arrow_left">
+                        <path d="M 50 20 l -30 30 l 30 30 l -15 -30 L 50 20" />
+                    </svg> 
+                </div>
+                <div class="carousel" id="carousel2">
+                    <img src="images/wikipedia_screen.png" alt="Screenshot of Wikipedia Viewer" title="Wikipedia Viewer" class="singleproject_img active" id="single1"/>
+                    <img src="images/pomodoro_screen.png" alt="Screenshot of Pomodoro Clock" title="Pomodoro Clock"  class="singleproject_img" id="single2"/>
+                    <img src="images/tictactoe_screen.png" alt="Screenshot of Tic Tac Toe Game" title="Tic Tac Toe" class="singleproject_img" id="single3"/>
+                    <img src="images/simon_screen.png" alt="Screenshot of Simon Game" title="Simon Game" class="singleproject_img" id="single4"/>
+                    <img src="images/calc_screen.png" alt="Screenshot of Calculator" title="Calculator" class="singleproject_img" id="single5"/>
+                </div>
+                <div class="arrowbox arrowbox-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 100" class="arrow_left">
+                        <path d="M 20 20 l 30 30 l -30 30 l 15 -30 L 20 20" />
+                    </svg>
                 </div>
             
             </div>
@@ -92,7 +112,7 @@
             Some Footer Text
         </footer>
     </div>
-
+    <script src="event.js"></script>
     <script src="index.js"></script>
     
 </body>

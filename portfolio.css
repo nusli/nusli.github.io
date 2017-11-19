@@ -1,4 +1,57 @@
-#portfolio img {
-    min-width: 300px;
-    width: 40vw;
+.showcase {
+    display: grid;
+    grid-template-columns: 10% 60% 10%;
+    grid-template-rows: auto 30vw;
+    grid-template-areas: 
+    "heading heading heading"
+    " arrow_left carousel arrow_right";
+    grid-column-gap: 5%; 
+    align-items: center;
+    justify-content: center;
+}
+.showcase h3 {
+    grid-area: heading;
+}
+
+.carousel {
+    position: relative;
+    display: inline-block;
+    grid-area: carousel;
+    height: 100%;
+}
+.carousel img {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.carousel .active {
+    opacity: 1;
+}
+.arrowbox {
+    width: 10vw;
+    display: inline-block;
+    cursor: pointer;
+}
+.arrowbox:hover {
+    width: 10.2vw;
+}
+.arrowbox:hover svg{
+    stroke: #222;
+    transform: scale (1.1, 1.1);
+    fill: #222;
+}
+.arrowbox_left {
+    grid-area: arrow_left;
+}
+.arrowbox_right {
+    grid-area: arrow_right;
+}
+.arrowbox svg {
+    stroke-width: 1px;
+    stroke: #888;
+    fill: #888;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
 }
