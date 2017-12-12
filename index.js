@@ -24,6 +24,8 @@ addEvent (document, "DOMContentLoaded", function () {
             id[1] = (Number(id[1]) + 1).toString();
         }
 
+        setDot(id[1], carousel); // changing the dot
+        
         newID = id.join("-");
         active.className = imageClassName;
         document.getElementById(newID).className = `${imageClassName} active`;
@@ -49,6 +51,8 @@ addEvent (document, "DOMContentLoaded", function () {
         else {
             id[1] = (Number(id[1]) - 1).toString();
         }
+
+        setDot(id[1], carousel); // changing the dot
 
         newID = id.join("-");
         active.className = imageClassName;
@@ -85,5 +89,26 @@ addEvent (document, "DOMContentLoaded", function () {
     
     for (let i=0; i < singleProjects.length; i++) {
         addEvent(singleProjects[i], "click", showLayer);
+    }
+    // Adding dots to portfolio
+    for (let i = 1; i < teamProjects.length; i++) {
+        document.getElementById("dots1").innerHTML += "<li></li>";
+    }
+    for (let i = 1; i < singleProjects.length; i++) {
+        document.getElementById("dots2").innerHTML += "<li></li>";
+    }
+
+    function setDot (dotPlusOne, carousel) {
+        let newActive = Number(dotPlusOne) - 1; //dot is 1 too high due to different naming
+        if (carousel === "carousel1") {
+            var dotId = "dots1";
+        } else {
+            var dotId = "dots2";
+        }
+
+        let activeDot = document.querySelector(`#${dotId} > .active`);
+        activeDot.className = "";
+        let dotList = document.getElementById(dotId);
+        dotList.children[newActive].className = "active";
     }
 });
