@@ -67,7 +67,7 @@ addEvent (document, "DOMContentLoaded", function () {
 
     function showLayer () {
         let anchor = this.children[0];
-        anchor.style.height = "96%"
+        anchor.style.height = "93%"
         anchor.style.padding = "4% 4% 0 4%";
     }
     function hideLayer ( element ) {
