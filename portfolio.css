@@ -40,15 +40,15 @@
     height: 0;
     transition: all 0.5s;
     overflow: hidden;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 .singleproject_img:hover .showcase_layer, .teamproject_img:hover .showcase_layer {
     height: 93% !important;
     padding: 4% 4% 0 4% !important;
 }
 .showcase_layer .project-title {
-    font-size: 1.2em;
-    line-height: 1.6em;
+    font-size: 1em;
+    line-height: 1.4em;
     text-decoration: underline;
 }
 .carousel .showcase_img {
@@ -87,4 +87,23 @@
     margin: 0;
     padding: 0;
     transition: all 0.5s;
+}
+
+@media only screen and (min-width: 470px) {
+    .showcase_layer .project-title {
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+    .carousel .showcase_layer {
+        font-size: 0.9em;
+    }
+}
+@media only screen and (min-widht: 770px) {
+    .carousel .showcase_layer {
+        font-size: 1em;
+    }
+    .showcase_layer .project-title {
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
 }
