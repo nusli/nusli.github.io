@@ -3,6 +3,7 @@ header #hamburger{
     cursor: pointer;
     position: fixed;
     right: 2%;
+    z-index: 3;
 }
 
 #hero {
@@ -43,3 +44,31 @@ nav {
     grid-area: text;
 }
 
+.sidebar {
+    position: absolute;
+    z-index: 2;
+    height: 90vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    transition: all 0.7s;
+    overflow: hidden;
+}
+.sidebar .navlink {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+.sidebar ul {
+    padding: 0;
+}
+.sidebar li {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    /*width: 50vw;*/
+    margin: auto;
+}
