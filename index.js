@@ -5,12 +5,20 @@ addEvent (document, "DOMContentLoaded", function () {
         *** */
         function toggleNav (navBar) {
             //check for different layouts
-            if (navbar.className === "sidebar") {
-                navbar.className = "sidebar visible";
+            if (navBar.className === "sidebar") {
+                navBar.className = "sidebar visible";
             } else {
-                navbar.className = "sidebar";
+                navBar.className = "sidebar";
             }
         }
+
+        const hamburger = document.getElementById("hamburger"), 
+        navLinks = document.getElementsByClassName("navlink"),
+        navbar = document.getElementById("navside");
+
+        addEvent(hamburger, "click", function() { toggleNav(navbar) });
+        addEvents(navLinks, "click", function() { toggleNav(navbar) });
+        //hamburger.addEventListener("click", function() {toggleNav(navbar) });
 
     /* ***
         Portfolio functions

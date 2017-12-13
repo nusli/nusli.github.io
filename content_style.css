@@ -47,8 +47,10 @@ nav {
 .sidebar {
     position: absolute;
     z-index: 2;
-    height: 90vh;
-    width: 100vw;
+    height: 100vh;
+    bottom: 100vh;
+    left: 0;
+    right: 0;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -68,7 +70,27 @@ nav {
 }
 .sidebar li {
     border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    /*width: 50vw;*/
+    padding-top: 10px;
     margin: auto;
+}
+#navside.visible {
+    bottom: 0;
+}
+@media only screen and (orientation: landscape) and (min-width: 650px) {
+    .sidebar {
+        left: 100vw;
+        right: 0;
+        bottom: 0;
+        text-align: left;
+    }
+    #navside.visible {
+        left: 60vw;
+    }
+    .sidebar li {
+        margin: 0;
+    }
+    .sidebar ul {
+        padding-left: 40px;
+        margin-top: 9vh;
+    }
 }
