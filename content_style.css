@@ -82,6 +82,7 @@ nav {
         right: 0;
         bottom: 0;
         text-align: left;
+        /*border-left: 1px solid #222;*/
     }
     #navside.visible {
         left: 60vw;
@@ -92,5 +93,10 @@ nav {
     .sidebar ul {
         padding-left: 40px;
         margin-top: 9vh;
+    }
+}
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+    #navside.visible {
+        left: 70vw;
     }
 }
