@@ -1,6 +1,20 @@
 addEvent (document, "DOMContentLoaded", function () {
     console.log("DOM content loaded");
-    
+    /* ***
+        Navbar functions
+        *** */
+        function toggleNav (navBar) {
+            //check for different layouts
+            if (navbar.className === "sidebar") {
+                navbar.className = "sidebar visible";
+            } else {
+                navbar.className = "sidebar";
+            }
+        }
+
+    /* ***
+        Portfolio functions
+        *** */
     // functions to change portfolio images
     const arrows_left = document.getElementsByClassName("arrowbox-left"),
     arrows_right = document.getElementsByClassName("arrowbox-right");
@@ -66,6 +80,7 @@ addEvent (document, "DOMContentLoaded", function () {
     addEvent(arrows_left[1], "click", function () {prevImg("carousel2")});
 
     /* functions to show image layer in portfolio */
+
     const teamProjects = document.getElementsByClassName("teamproject_img"),
     singleProjects =  document.getElementsByClassName("singleproject_img");
 
