@@ -47,7 +47,7 @@ nav {
 .sidebar {
     position: fixed;
     z-index: 2;
-    height: 100vh;
+    top: 0;
     bottom: 100vh;
     left: 0;
     right: 0;
@@ -75,6 +75,7 @@ nav {
 }
 #navside.visible {
     bottom: 0;
+    height: 100vh;
 }
 @media only screen and (orientation: landscape) and (min-width: 650px) {
     .sidebar {
@@ -83,6 +84,7 @@ nav {
         bottom: 0;
         text-align: left;
         /*border-left: 1px solid #222;*/
+        height: 100vh;
     }
     #navside.visible {
         left: 60vw;
