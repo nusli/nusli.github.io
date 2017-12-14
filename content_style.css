@@ -45,7 +45,7 @@ nav {
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     height: 100vh;
     bottom: 100vh;
