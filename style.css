@@ -32,6 +32,9 @@ h2, h3, h4, h5, h6{
 p, a {
     font-family: "Fauna One", serif;
 }
+a {
+    color: #eee;
+}
 ul {
     font-weight: bold;
     list-style-type: none;
