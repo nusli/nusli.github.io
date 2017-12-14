@@ -48,3 +48,11 @@ section:nth-child(odd) {
 section:nth-child(even) {
     background: #607d8b;
 }
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+footer a {
+    color: black;
+}
