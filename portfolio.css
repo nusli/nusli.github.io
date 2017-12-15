@@ -13,7 +13,9 @@
 .showcase h3 {
     grid-area: heading;
 }
-
+.mobile-info {
+    font-style: italic;
+}
 .carousel {
     position: relative;
     display: inline-block;
@@ -105,6 +107,9 @@
 .dots li.active {
     background-color: #fff !important;
 }
+body:hover .mobile-info {
+    display: none;
+}
 
 @media only screen and (min-width: 470px) {
     .showcase_layer .project-title {
@@ -114,6 +119,7 @@
     .carousel .showcase_layer {
         font-size: 0.9em;
     }
+    
 }
 @media only screen and (min-widht: 770px) {
     .carousel .showcase_layer {
