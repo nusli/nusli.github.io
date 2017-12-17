@@ -133,4 +133,33 @@ addEvent (document, "DOMContentLoaded", function () {
         let dotList = document.getElementById(dotId);
         dotList.children[dot].className = "active";
     }
+    function setImg( imgIndex, group) {
+        if (group === "team") {
+            var className = "teamproject_img",
+            dotId = "dots1"; 
+        } else if (group === "single") {
+            var className = "singleproject_img",
+            dotId = "dots2";
+        } else {console.log("Invalid value for 'group' (index.js)")}
+
+        let imageList = document.getElementsByClassName(className),
+        dotList = document.querySelectorAll(`#${dotId} > li`),
+        activeDot = document.querySelector(`#${dotId} > .active`),
+        activeImg = document.querySelector(`.${className}.active`);
+        activeDot.className = "";
+        activeImg.className = className;
+
+        imageList[imgIndex].className += " active";
+        dotList[imgIndex].className = "active";
+    }
+
+    let dots1 = document.getElementById("dots1").children,
+    dots2 = document.getElementById("dots2").children;
+
+    for (let i=0; i < dots1.length; i++) {
+        addEvent(dots1[i], "click", function () { setImg (i, "team") });
+    }
+    for (let i=0; i < dots2.length; i++) {
+        addEvent(dots2[i], "click", function () { setImg (i, "single") });
+    }
 });
